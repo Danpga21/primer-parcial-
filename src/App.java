@@ -28,10 +28,11 @@ public class App {
                 case 5 -> Capicua.ejecutar();
                 case 6 -> TextoaMorse.ejecutar();
                 case 7 -> MorseaTexto.ejecutar();
-                case 8 -> System.out.println("Saliendo del programa...");
+                case 8 -> GestorDeCaballeros.ejecutar();
+                case 9 -> System.out.println("Saliendo del programa...");
                 default -> System.out.println("Opción inválida. Intente nuevamente.");
             }
 
-        } while (opcion != 8);
+        } while (opcion != 9);
     }
 }
