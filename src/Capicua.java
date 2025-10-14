@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Capicua {
-    private static final Scanner scanner = new Scanner(System.in);
+    public static final Scanner scanner = new Scanner(System.in);
     public static void ejecutar() {
 
         System.out.print("Ingrese un número: ");

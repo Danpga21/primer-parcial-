@@ -15,7 +15,7 @@ public class TextoaMorse {
         System.out.println(morse);
     }
 
-    private static String convertirATextoMorse(String texto) {
+    public static String convertirATextoMorse(String texto) {
         HashMap<Character, String> morseMap = new HashMap<>();
 
         morseMap.put('A', ".-");
