@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class App {
     public static final Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         int opcion;
         do {
@@ -28,11 +27,12 @@ public class App {
                 case 5 -> Capicua.ejecutar();
                 case 6 -> TextoaMorse.ejecutar();
                 case 7 -> MorseaTexto.ejecutar();
-                case 8 -> GestorDeCaballeros.ejecutar();
+                case 8 -> GestorCaballeros.ejecutar();
                 case 9 -> System.out.println("Saliendo del programa...");
                 default -> System.out.println("Opción inválida. Intente nuevamente.");
             }
 
         } while (opcion != 9);
+
     }
 }

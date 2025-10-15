@@ -1,22 +1,33 @@
 public class Caballero {
-
     public String nombre;
-    public int edad;
-    public String reino;
-    public int nivelDeHonor;
+    public String constelacion;
+    public int cosmos;
+    public String tipoArmadura;
+    public String dios;
 
-
-    public Caballero(String nombre, int edad, String reino, int nivelDeHonor) {
+    // 🔹 Constructor con parámetros
+    public Caballero(String nombre, String constelacion, int cosmos, String tipoArmadura, String dios) {
         this.nombre = nombre;
-        this.edad = edad;
-        this.reino = reino;
-        this.nivelDeHonor = nivelDeHonor;
+        this.constelacion = constelacion;
+        this.cosmos = cosmos;
+        this.tipoArmadura = tipoArmadura;
+        this.dios = dios;
     }
 
-    public void mostrarInformacion() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad + " años");
-        System.out.println("Reino: " + reino);
-        System.out.println("Nivel de Honor: " + nivelDeHonor);
+    // 🔹 Constructor vacío
+    public Caballero() {
     }
-}
+
+    // 🔹 Método para mostrar los datos del caballero
+    @Override
+    public String toString() {
+        return "\nCaballero: " + nombre +
+                "\nConstelación: " + constelacion +
+                "\nCosmos: " + cosmos +
+                "\nTipo de Armadura: " + tipoArmadura +
+                "\nDios: " + dios +
+                "\n----------------------------";
+    }
+
+
+    }
