@@ -103,7 +103,7 @@ public class GestorCaballeros {
 
 
 
-    // 🔹 Mostrar todos los caballeros
+
     public static void mostrarCaballeros() {
         if (listaCaballeros.isEmpty()) {
             System.out.println(" No hay caballeros registrados.");
@@ -128,7 +128,7 @@ public class GestorCaballeros {
         }
     }
 
-    // 🔹 Batalla entre dos caballeros
+
     public static void batallaCaballeros() {
         if (listaCaballeros.size() < 2) {
             System.out.println(" No hay suficientes caballeros para la batalla (mínimo 2).");

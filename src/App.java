@@ -14,7 +14,8 @@ public class App {
             System.out.println("6. Conversor texto a Morse");
             System.out.println("7. Conversor Morse a texto");
             System.out.println("8. Gestor de Caballeros del Zodiaco");
-            System.out.println("9. Salir");
+            System.out.println("9. juego ");
+            System.out.println("10. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
             scanner.nextLine();
@@ -28,11 +29,12 @@ public class App {
                 case 6 -> TextoaMorse.ejecutar();
                 case 7 -> MorseaTexto.ejecutar();
                 case 8 -> GestorCaballeros.ejecutar();
-                case 9 -> System.out.println("Saliendo del programa...");
+                case 9 ->juego.ejecutar();
+                case 10-> System.out.println("Saliendo del programa...");
                 default -> System.out.println("Opción inválida. Intente nuevamente.");
             }
 
-        } while (opcion != 9);
+        } while (opcion != 10);
 
     }
 }

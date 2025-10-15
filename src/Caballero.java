@@ -5,7 +5,6 @@ public class Caballero {
     public String tipoArmadura;
     public String dios;
 
-    // 🔹 Constructor con parámetros
     public Caballero(String nombre, String constelacion, int cosmos, String tipoArmadura, String dios) {
         this.nombre = nombre;
         this.constelacion = constelacion;
@@ -14,11 +13,10 @@ public class Caballero {
         this.dios = dios;
     }
 
-    // 🔹 Constructor vacío
+
     public Caballero() {
     }
 
-    // 🔹 Método para mostrar los datos del caballero
     @Override
     public String toString() {
         return "\nCaballero: " + nombre +
